@@ -33,8 +33,15 @@
   });
 })(jQuery);
 
-function sendEmail() {
-  window.open("mailto:julietacash@gmail.com?subject=WebSite");
+// Contact-me Function
+function sendEmail(event) {
+  event.preventDefault();
+  let message = document.querySelector("#message").value;
+  let name = document.querySelector(`#name`).value;
+  let email = document.querySelector(`#email`).value;
+  console.log(name);
+  let body = `${message}, <br> - ${name} - ${email}`;
+  window.open(`mailto:julietacash@gmail.com?subject=WebSite&body=${body}`);
 }
 
 let sendEmailButton = document.querySelector("#send-email");

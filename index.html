@@ -170,11 +170,7 @@
         
         --></div>
         <footer>
-          <h2>Creemos tu sitio web</h2>
-          <p>¿Querés que creemos tu sitio?</p>
-          <a href="#contact" class="button large scrolly"
-            >Get in touch with me</a
-          >
+          <a href="#contact" class="button large scrolly">Contactame</a>
         </footer>
       </div>
     </article>
@@ -183,8 +179,8 @@
     <article id="contact" class="wrapper style4">
       <div class="container medium">
         <header>
-          <h2>Have me make stuff for you.</h2>
-          <p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
+          <h2>Creemos juntes tu sitio web</h2>
+          <p>Podemos usar un diseño que ya tengas o crearlo desde 0.</p>
         </header>
         <div class="row">
           <div class="col-12">
@@ -218,7 +214,13 @@
                 </div>
                 <div class="col-12">
                   <ul class="actions">
-                    <li><input type="submit" value="Send Message" /></li>
+                    <li>
+                      <input
+                        type="button"
+                        value="Send Email"
+                        onclick="sendEmail()"
+                      />
+                    </li>
                     <li>
                       <input type="reset" value="Clear Form" class="alt" />
                     </li>
@@ -295,7 +297,7 @@
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

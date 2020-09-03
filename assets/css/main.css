@@ -1876,10 +1876,6 @@ ol li {
 
 /* Social */
 
-#contact-details {
-  list-style: none;
-}
-
 ul.social {
   cursor: default;
   margin: 50px auto;
@@ -1892,6 +1888,14 @@ ul.social li {
   display: inline-block;
   margin: 0.25em;
   top: 0;
+  padding-left: 0;
+}
+ul#contact-details {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul#contact-details li {
   padding-left: 0;
 }
 

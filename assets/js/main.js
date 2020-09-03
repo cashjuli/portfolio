@@ -34,13 +34,8 @@
 })(jQuery);
 
 function sendEmail() {
-  Email.send({
-    Host: "smtp.mailtrap.io",
-    Username: "username",
-    Password: "password",
-    To: "julietacash@gmail.com",
-    From: "you@isp.com",
-    Subject: "This is the subject",
-    Body: "And this is the body",
-  }).then((message) => alert(message));
+  window.open("mailto:julietacash@gmail.com?subject=WebSite");
 }
+
+let sendEmailButton = document.querySelector("#send-email");
+sendEmailButton.addEventListener("click", sendEmail);
